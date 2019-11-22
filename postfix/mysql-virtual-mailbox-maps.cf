@@ -1,0 +1,5 @@
+user = mailadmin
+password = SmtpPW
+hosts = 193.191.177.170
+dbname = mailserver
+query = select 1 from virtual_users where email='%s'
