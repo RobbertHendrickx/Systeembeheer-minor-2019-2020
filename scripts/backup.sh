@@ -1,7 +1,7 @@
 #!/bin/bash
 
 mkdir -p /var/backups/inotify
-if echo $1 | grep -qP "\..*\.sw(p|x|px)$" ; then #for vim users:)
+if echo $1 | grep -qP "\..*\.sw(p|x|px)$" ; then
         exit 0
 fi
 cp -p --parents $1  /var/backups/inotify

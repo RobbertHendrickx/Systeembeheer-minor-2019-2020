@@ -20,6 +20,7 @@ Defaults	secure_path="/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/b
 root	ALL=(ALL:ALL) ALL
 check ALL=(ALL:ALL) NOPASSWD: /usr/lib/nagios/plugins/check_apt
 check ALL=(ALL:ALL) NOPASSWD: /usr/sbin/arp
+check ALL=(ALL:ALL) NOPASSWD: /etc/scripts/dns_add_record , /etc/scripts/dns_add_zone, /etc/scripts/http_add_vhost
 
 # Members of the admin group may gain root privileges
 %admin ALL=(ALL) ALL
